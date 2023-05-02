@@ -4,6 +4,8 @@ function add() {
 	var result = num1 + num2;
     // console.log(result);
 	document.getElementById("result").innerHTML = result;
+    document.getElementById("result").classList.remove("d-none");
+
 }
 
 function subtract() {
@@ -12,12 +14,16 @@ function subtract() {
 	var result = num1 - num2;
     // console.log(result);
 	document.getElementById("result").innerHTML = result;
+    document.getElementById("result").classList.remove("d-none");
+
 }
 
 function Clear() {
 	document.getElementById("num1").value = "";
 	document.getElementById("num2").value = "";
 	document.getElementById("result").innerHTML = "";
+    document.getElementById("result").classList.add("d-none");
+
     // console.log(num1.value);
     // console.log(num2.value);
     // console.log(result.value);
